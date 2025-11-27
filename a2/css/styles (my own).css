@@ -1,0 +1,254 @@
+/*
+Author: Minghao Sun
+Date: 9/10/2025
+File Name: styles.css
+*/
+
+/* CSS reset */
+body, header, nav, main, footer, h1, div, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{ /* Add the body selector */
+    background-color: rgb(0, 0, 0); /* Set the background colour */
+    width: 100%;
+    min-height: 100vh; /* Full viewport height */
+} /* Closing brace for the body selector */
+
+.container {
+    max-width: 1200px; /* Limits content width */
+    margin: 0 auto; /* Centers the layout */
+  }
+  
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header{ /* Style rules for mobile viewport */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    height: 190px;
+}
+
+header img {
+    margin: 0 auto;
+}
+    
+
+nav{ /* Closing brace for the header selector */
+    padding: 1%;
+    margin-bottom: 1%;
+}
+nav li a  {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+main {
+    clear:left; /* clears a float to the left */
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.15em;
+}
+
+.hours {
+    margin-left: 10%;
+}
+
+.tel-link {
+    background-color: #404040;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+.action{
+    font-size: 1.35em;
+    color: #666600;
+    font-weight: bold;
+}
+
+#weights, #cardio, #training {
+    margin: 0.2%;
+}
+
+.round {
+    border-radius: 8px;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px) { /* insert a media query */
+
+    /*Tablet Viewport; Show tablet-desktop class, hide mobile class */
+    .tablet-desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rule for header */
+    header{
+        position: static;
+        padding-bottom: 2%;
+    }
+
+    /* Tablet Viewport: Style rules for nav area*/
+    nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+
+    nav li:last-child {
+        border-right: none;
+
+    }
+
+    nav li a {
+        padding: 0.1em 0.75em;
+
+    }
+
+}/* media query closing brace*/
+
+/* Media Query for Desktop Viewport*/
+@media screen and (min-width: 769px) {
+    /* Desktop Viewoirt: Style rule for header*/
+    header {
+        width: 25%;
+        float: left;
+        padding-bottom: 0;
+    }
+
+    /* Desktop Viewport: Style rules for nav area */
+    nav{
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0;
+    }
+
+    nav ul {
+        text-align: right;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav li a{
+        padding: 0.5em 1em;
+    }
+
+
+    /* Desktop Viewport: Style Rules for main content */
+    main {
+        clear: left;
+    }
+    main h1 {
+        font-size: 1.8em;
+    }
+
+    #weights, #cardio, #training
+    {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    #exercises {
+        clear: left;
+    }
+
+
+} */ media query for Desktop Viewpoint closing brace */
+
+
+
+/*#exercises {
+    clear: left;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #f2f2f2;
+    padding: 1% 2%;
+    }
+
+    #exercises dt {
+        font-weight: bold;
+        }
+    #exercises dd {
+        padding: 0.5% 1% 2% 0;
+        }
+
+*/
+        
+#contact {
+    text-align: center;
+}
+
+#contact a[href^="mailto: "] {
+    color:aqua;
+    text-decoration: none;
+
+}
+
+footer p{
+    font-size: 0.75em;
+    text-align: center;
+    color: #666600;
+    padding: 0 1em;
+    text-decoration: none;
+
+}
+footer p a{
+    color:#fff; /* Sets the link colour*/
+    text-decoration: none;
+}
+
+nav ul{ /* add the ul selector nested within a nav element */
+
+    list-style-type: none; /* Remove the bullet marker */
+    text-align: center; /* Align the unordered list to the center */
+}
+nav li {
+    font-size: 1.5em;
+    font-family: 'Francois One', sans-serif;
+    border-top: 1px solid #fff;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
